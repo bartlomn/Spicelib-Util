@@ -191,6 +191,15 @@ public class List extends Proxy {
 	}
 	
 	/**
+	 * Returns the indicated item from this list.
+	 * 
+	 * @return the last item in this list
+	 */
+	public function getAt ( index:int ) : * {
+      assertRange(index);
+      return items[index];	}
+	
+	/**
 	 * Sorts the elements in this list, delegating to the sort method
 	 * of the underlying Array.
 	 * 
